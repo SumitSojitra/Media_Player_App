@@ -1,6 +1,7 @@
 import 'package:chewie/chewie.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:video_player/video_player.dart';
 
 import '../../utils/utils.dart';
@@ -33,7 +34,11 @@ class _TumPremHoPageState extends State<TumPremHoPage> {
     Map data = ModalRoute.of(context)!.settings.arguments as Map;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Video Player"),
+        backgroundColor: Color(0xff0E2954),
+        title: Text(
+          "Media Booster",
+          style: GoogleFonts.titilliumWeb(),
+        ),
         centerTitle: true,
         leading: IconButton(
           onPressed: () {
@@ -58,6 +63,7 @@ class _TumPremHoPageState extends State<TumPremHoPage> {
               icon: Icon(Icons.pause)),
         ],
       ),
+      backgroundColor: Color(0xff0E2954),
       body: Column(
         children: [
           Expanded(
@@ -76,7 +82,8 @@ class _TumPremHoPageState extends State<TumPremHoPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     data['caption'],
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    style: GoogleFonts.titilliumWeb(
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ),
                 // SizedBox(height: 15),

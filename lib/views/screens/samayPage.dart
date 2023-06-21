@@ -1,6 +1,7 @@
 import 'package:chewie/chewie.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:video_player/video_player.dart';
 
 import '../../utils/utils.dart';
@@ -33,7 +34,11 @@ class _SamayPageState extends State<SamayPage> {
     Map data = ModalRoute.of(context)!.settings.arguments as Map;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Video Player"),
+        backgroundColor: Color(0xff0E2954),
+        title: Text(
+          "Media Booster",
+          style: GoogleFonts.titilliumWeb(),
+        ),
         centerTitle: true,
         leading: IconButton(
           onPressed: () {
@@ -43,6 +48,7 @@ class _SamayPageState extends State<SamayPage> {
           icon: Icon(Icons.arrow_back_ios_new),
         ),
       ),
+      backgroundColor: Color(0xff0E2954),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -76,7 +82,8 @@ class _SamayPageState extends State<SamayPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     data['caption'],
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    style: GoogleFonts.titilliumWeb(
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ),
                 // SizedBox(height: 15),

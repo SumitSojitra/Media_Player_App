@@ -36,3 +36,26 @@ List<String> pages = [
   'SamayPage',
   'TumPremHo'
 ];
+
+List<Map<String, dynamic>> allMusic = [
+  {
+    'image': "",
+    'music': "assets/Songs/Bhajan_Mashup.mp3",
+    'name': "Krishna Bhajan MashUp 1"
+  },
+  {
+    'image': "",
+    'music': "assets/Songs/Krishna_Bhajan_Mashup_2.mp3",
+    'name': "Krishna Bhajan MashUp 2"
+  },
+  {
+    'image': "",
+    'music': "assets/Songs/Jaadugar.mp3",
+    'name': "Paradox Jaadugar"
+  },
+  {
+    'image': "assets/images/picture.jpg",
+    'music': "assets/Songs/RIHA.mp3",
+    'name': "RIHA"
+  },
+];
